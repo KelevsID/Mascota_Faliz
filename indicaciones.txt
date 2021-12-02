@@ -1,0 +1,15 @@
+#1 Instalar flask, ya deberian tenerlo si no, pues abres la consola de CMD
+    y ejecutas el << pip install flask >> 
+    o si abres la consola del Anaconda Prompt con << conda install flask >>
+
+#2 Ejecutar el index.py desde el cmd en la carpeta donde este el archivo
+python index.py
+
+#3 En cada archivo nuevo que se cree poner 
+{% extends "layout.html" %}     <!-- Esta linea importa el layout -->
+{% block content %}             <!-- Esta linea inicia el bloque de código -->
+<!-- Aquí va todo el html -->
+{% endblock%}                   <!-- Esta linea cierra el bloque de código -->
+
+#4 Las imagenes se importan de esta manera
+{{url_for('static', filename = 'images/signin.png')}}    signin.png seria la imagen
